@@ -6,61 +6,61 @@ const About = () => {
   const benefits = [
     {
       icon: <Activity size={28} />,
-      title: 'Blood Circulation',
-      description: 'Promotes blood circulation with light to medium exercise, enhancing the health benefits of exercise.'
+      title: 'Vibe Check',
+      description: 'Keep that blood flowin\' with easy-to-medium cardio. It\'s health, but make it fun.'
     },
     {
       icon: <Baby size={28} />,
-      title: 'Active Youth',
-      description: 'Helps children and teens become more physically active by integrating fitness band technology into their routines.'
+      title: 'Gamer Gains',
+      description: 'Getting teens off the couch by making fitness part of the quest. No more boring gym sessions.'
     },
     {
       icon: <Users size={28} />,
-      title: 'Family Health',
-      description: 'Creates a healthier environment and home life for families.'
+      title: 'Fam Goals',
+      description: 'Building a healthier home base for the whole squad. Family bonding, but better.'
     },
     {
       icon: <Heart size={28} />,
-      title: 'Parental Engagement',
-      description: 'Provides parents with better tools to engage in their kids\' health and fitness journey.'
+      title: 'Hype Squad',
+      description: 'Tools for parents to cheer on the grind and stay in the loop. We love to see it.'
     },
     {
       icon: <Smartphone size={28} />,
-      title: 'Healthy Habits',
-      description: 'Conditions kids to perform exercise while playing on their smartphones, no matter where they are.'
+      title: 'Daily Quests',
+      description: 'Turn exercise into a habit, anywhere, anytime. Just you and your phone. Pure convenience.'
     },
     {
       icon: <Shield size={28} />,
-      title: 'Parental Monitoring',
-      description: 'Allows parents to monitor their children\'s game playing time on their smartphones, ensuring a balanced lifestyle.'
+      title: 'Playtime Balance',
+      description: 'Keeping track of screen time so life stays balanced. Work hard, play harder, stay healthy.'
     },
     {
       icon: <Activity size={28} />,
-      title: 'Medical Accessibility',
-      description: 'User-friendly for anyone with medical needs, such as post-surgery physical therapy or diabetic patients.'
+      title: 'Everyone\'s Invited',
+      description: 'Accessible for recovery or cardio. Whether you\'re post-op or just vibes, we\'ve got you.'
     }
   ];
 
   const howItWorks = [
     {
       icon: <Smartphone size={40} />,
-      title: 'Bluetooth Connection',
-      description: 'CyclePath utilizes Bluetooth exercise bike technology to connect your smartphone to the bike.'
+      title: 'Instant Sync',
+      description: 'Connect your phone to the bike in seconds using Bluetooth. It\'s giving seamless.'
     },
     {
       icon: <Activity size={40} />,
-      title: 'Fitness Sync',
-      description: 'Your information and statistics are synced with the included fitness band technology.'
+      title: 'Data Drop',
+      description: 'Your stats sync straight to your band. Grind identified. Track every win.'
     },
     {
       icon: <Shield size={40} />,
-      title: 'Eco-Friendly Design',
-      description: 'The bike operates without outside power, emits no harmful gases or radiation, and is suitable for all ages.'
+      title: 'Green Energy',
+      description: 'No batteries. No plug. Just pure power from your own effort. Eco-friendly and elite.'
     },
     {
       icon: <Zap size={40} />,
-      title: 'Energy Generation',
-      description: 'As you pedal, you generate energy, enabling you to charge your phone or any device through the USB port.'
+      title: 'Unlimited Power',
+      description: 'Pedal to charge. Your grind literally powers your phone. That\'s a W for everyone.'
     }
   ];
 
@@ -99,10 +99,10 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="about-hero-title">About <span className="gradient-text">CyclePath</span></h1>
+          <h1 className="about-hero-title">CyclePath? <span className="gradient-text">Real.</span></h1>
           <p className="about-hero-subtitle">
-            Discover innovative home exercise technology that combines the health benefits
-            of exercise with fun gaming experiences.
+            Level up your workout. CyclePath turns sweat into gameplay. 
+            Lowkey the best way to move.
           </p>
         </motion.div>
       </section>
@@ -131,12 +131,11 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="about-title">Revolutionary Hybrid Technology</h2>
+            <h2 className="about-title">The Ultimate Mashup</h2>
             <p className="about-description">
-              This hybrid technology, featuring a Bluetooth exercise bike, offers both health
-              benefits and game-playing capabilities. It represents an exciting new category
-              in home gaming and home exercise, paving the way for children and adults to
-              discover how to combine both activities effectively.
+              Bluetooth bike meets mobile gaming. It's a whole new vibe for home workouts. 
+              Whether you're a pro or just starting, we're merging grinding with gaming. 
+              No cap—this is the future of fitness.
             </p>
           </motion.div>
         </div>
@@ -151,9 +150,9 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Benefits</h2>
+          <h2 className="section-title">The Perks</h2>
           <p className="section-subtitle">
-            Transform your lifestyle with CyclePath
+            Upgrade your routine.
           </p>
         </motion.div>
 
@@ -190,9 +189,9 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">How Does It Work?</h2>
+          <h2 className="section-title">The Setup</h2>
           <p className="section-subtitle">
-            Simple technology, powerful results
+            Big results, zero effort.
           </p>
         </motion.div>
 
@@ -245,11 +244,9 @@ const About = () => {
         >
           <h2 className="mission-title">Our Mission</h2>
           <p className="mission-description">
-            At CyclePath, we believe in making fitness fun and accessible for everyone.
-            Our mission is to revolutionize the way people think about exercise by
-            combining it with the engaging world of gaming. We're committed to creating
-            products that promote health, bring families together, and make staying
-            active an enjoyable part of your daily routine.
+            We're here to make fitness not suck. We believe staying active should feel 
+            like a game, not a chore. We're building a world where every rep counts 
+            toward the win. Join the squad and start the grind.
           </p>
         </motion.div>
       </section>

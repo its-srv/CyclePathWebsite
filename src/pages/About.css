@@ -51,10 +51,11 @@
 
 .about-hero-title {
   font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: var(--text-primary);
+  letter-spacing: -1px;
 }
 
 .about-hero-subtitle {
@@ -65,8 +66,22 @@
 
 /* About Intro */
 .about-intro {
-  padding: 6rem 2rem;
+  padding: 10rem 2rem;
   background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-intro::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
 }
 
 .about-intro-container {
@@ -106,9 +121,21 @@
 
 .about-title {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary);
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-cyan), transparent);
+  border-radius: 2px;
 }
 
 .about-description {
@@ -119,7 +146,7 @@
 
 /* Benefits Section */
 .about-benefits {
-  padding: 6rem 2rem;
+  padding: 10rem 2rem;
 }
 
 .section-header {
@@ -148,14 +175,21 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .benefit-item {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2.5rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.benefit-item:hover {
+  transform: scale(1.02) translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 240, 255, 0.1);
+  border-color: rgba(0, 240, 255, 0.3);
 }
 
 .benefit-item-icon {
@@ -188,8 +222,22 @@
 
 /* How It Works */
 .about-how-it-works {
-  padding: 6rem 2rem;
+  padding: 10rem 2rem;
   background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-how-it-works::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
 }
 
 .how-it-works-grid {
@@ -206,7 +254,14 @@
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-  padding: 2.5rem;
+  padding: 3rem;
+  transition: all 0.4s ease;
+}
+
+.how-it-works-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.3);
 }
 
 .how-it-works-icon {
@@ -294,7 +349,7 @@
 
 /* Mission Section */
 .about-mission {
-  padding: 6rem 2rem;
+  padding: 10rem 2rem;
 }
 
 .mission-content {
