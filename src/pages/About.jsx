@@ -260,64 +260,65 @@ import { Heart, Activity, Users, Baby, Smartphone, Shield, Plug, Zap } from 'luc
 import './About.css';
 
 const About = () => {
+
   const benefits = [
     {
       icon: <Activity size={28} />,
       title: 'Fun Cardio',
-      description: 'Light-to-medium intensity workouts that improve heart health while keeping things enjoyable.'
+      description: 'Light-to-medium workouts that boost heart health without feeling like work.'
     },
     {
       icon: <Baby size={28} />,
-      title: 'Youth Engagement',
-      description: 'Motivating teens to stay active by turning fitness into an interactive experience.'
+      title: 'Active Youth',
+      description: 'Turns screen time into movement time for kids and teens.'
     },
     {
       icon: <Users size={28} />,
       title: 'Family Wellness',
-      description: 'Helping families build healthier routines together at home.'
+      description: 'Build healthier routines together at home.'
     },
     {
       icon: <Heart size={28} />,
-      title: 'Parental Support',
-      description: 'Simple tools for parents to track progress and encourage healthy habits.'
+      title: 'Parental Engagement',
+      description: 'Simple ways for parents to support and guide healthy habits.'
     },
     {
       icon: <Smartphone size={28} />,
       title: 'Daily Motivation',
-      description: 'Turn movement into a consistent habit—anywhere, anytime, using just your phone.'
+      description: 'Quick sessions that make movement a daily habit.'
     },
     {
       icon: <Shield size={28} />,
-      title: 'Healthy Balance',
-      description: 'Smart tracking that supports a balanced relationship with screen time.'
+      title: 'Healthy Screen Time',
+      description: 'Encourages balance between play and physical activity.'
     },
     {
       icon: <Activity size={28} />,
       title: 'Accessible for Everyone',
-      description: 'Suitable for beginners, recovery users, and experienced athletes.'
+      description: 'Great for beginners, recovery users, and everyday riders.'
     }
   ];
 
   const howItWorks = [
     {
       icon: <Smartphone size={40} />,
-      title: 'Instant Sync',
-      description: 'Connect your phone to your bike in seconds using Bluetooth.'
+      title: 'Quick Connect',
+      description: 'Start riding and playing in seconds.'
     },
     {
       icon: <Activity size={40} />,
-      title: 'Real-Time Stats',
-      description: 'Track speed, distance, and performance as you ride.'
+      title: 'Live Progress',
+      description: 'See your movement turn into in-game action.'
     },
     {
       icon: <Shield size={40} />,
-      title: 'Self-Powered',
-      description: 'No batteries or outlets required—powered by your own movement.'
+      title: 'Self Powered',
+      description: 'No outlets needed. You power the experience.'
     },
     {
       icon: <Zap size={40} />,
-      title: 'Optional Charging',
-      description: 'Pedal-generated energy can help charge your phone while you ride.'
+      title: 'Bonus Charging',
+      description: 'Your ride can help keep your phone powered.'
     }
   ];
 
@@ -343,6 +344,7 @@ const About = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-background">
@@ -359,15 +361,17 @@ const About = () => {
           <h1 className="about-hero-title">
             About <span className="gradient-text">CyclePath</span>
           </h1>
+
           <p className="about-hero-subtitle">
-            Turning everyday cycling into an interactive fitness experience.
+            Turn workouts into play. Ride more. Move more. Have fun.
           </p>
         </motion.div>
       </section>
 
-      {/* About Content */}
+      {/* About Intro */}
       <section className="about-intro">
         <div className="about-intro-container">
+
           <motion.div
             className="about-image"
             initial={{ opacity: 0, x: -50 }}
@@ -390,17 +394,20 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="about-title">Who We Are</h2>
+
             <p className="about-description">
-              CyclePath was created with a simple belief: fitness should feel like play, not a chore.
-              We combine Bluetooth-enabled bikes with mobile gaming to make staying active engaging,
-              motivating, and accessible for everyone.
+              CyclePath was built on a simple idea: fitness should feel fun, not forced.
+              We turn everyday cycling into interactive play so staying active feels natural,
+              motivating, and easy for everyone.
             </p>
           </motion.div>
+
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Benefits */}
       <section className="about-benefits">
+
         <motion.div
           className="section-header"
           initial={{ opacity: 0, y: 30 }}
@@ -409,8 +416,9 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="section-title">Why CyclePath</h2>
+
           <p className="section-subtitle">
-            Designed to support healthier, more active lifestyles.
+            Built for better habits, better energy, and better screen time.
           </p>
         </motion.div>
 
@@ -429,6 +437,7 @@ const About = () => {
               whileHover={{ scale: 1.02, x: 10 }}
             >
               <div className="benefit-item-icon gradient-text">{benefit.icon}</div>
+
               <div className="benefit-item-content">
                 <h3 className="benefit-item-title">{benefit.title}</h3>
                 <p className="benefit-item-description">{benefit.description}</p>
@@ -436,10 +445,12 @@ const About = () => {
             </motion.div>
           ))}
         </motion.div>
+
       </section>
 
-      {/* How It Works Section */}
+      {/* How It Works */}
       <section className="about-how-it-works">
+
         <motion.div
           className="section-header"
           initial={{ opacity: 0, y: 30 }}
@@ -448,8 +459,9 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="section-title">How It Works</h2>
+
           <p className="section-subtitle">
-            Simple setup. Powerful results.
+            Simple setup. Real results.
           </p>
         </motion.div>
 
@@ -489,10 +501,12 @@ const About = () => {
             <Smartphone size={40} className="phone-icon" />
           </div>
         </motion.div>
+
       </section>
 
-      {/* Mission Section */}
+      {/* Mission */}
       <section className="about-mission">
+
         <motion.div
           className="mission-content"
           initial={{ opacity: 0, y: 30 }}
@@ -501,13 +515,16 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="mission-title">Our Mission</h2>
+
           <p className="mission-description">
-            To make staying active enjoyable, inclusive, and sustainable.
-            We’re building a future where every movement feels rewarding
-            and every workout feels like progress.
+            To make movement fun, accessible, and part of everyday life.
+            We’re creating a future where staying active feels rewarding,
+            not overwhelming.
           </p>
         </motion.div>
+
       </section>
+
     </motion.div>
   );
 };
