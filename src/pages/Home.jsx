@@ -95,57 +95,60 @@ const Home = () => {
 
         <div className="hero-container">
           <motion.div
-            className="hero-content"
+            className="hero-card"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.h1
-              className="hero-title"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <span className="gradient-text">CyclePath</span>
-              <span className="hero-title-sub">2Life</span>
-            </motion.h1>
+            {/* Left side - Content */}
+            <motion.div className="hero-content-section">
+              <motion.h1
+                className="hero-title"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <span className="gradient-text">CyclePath</span>
+                <span className="hero-title-sub">2Life</span>
+              </motion.h1>
 
-            <motion.p
-              className="hero-subtitle"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Revolutionizing home fitness through innovative gaming technology.
-              Transform your exercise routine into an immersive gaming experience.
-            </motion.p>
+              <motion.p
+                className="hero-subtitle"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                Revolutionizing home fitness through innovative gaming technology.
+                Transform your exercise routine into an immersive gaming experience.
+              </motion.p>
 
-            <motion.div
-              className="hero-buttons"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <Link to="/shop" className="btn-primary">
-                Pre-Order Now
-                <ArrowRight size={20} className="btn-icon" />
-              </Link>
-              <Link to="/about" className="btn-secondary">
-                Learn More
-              </Link>
+              <motion.div
+                className="hero-buttons"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+              >
+                <Link to="/shop" className="btn-primary">
+                  Pre-Order Now
+                  <ArrowRight size={20} className="btn-icon" />
+                </Link>
+                <Link to="/about" className="btn-secondary">
+                  Learn More
+                </Link>
+              </motion.div>
             </motion.div>
-          </motion.div>
 
-          <motion.div
-            className="hero-visual"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
-          >
-            <div className="hero-card float">
-              <Gamepad2 size={120} className="hero-icon" />
-              <div className="hero-glow"></div>
-            </div>
+            {/* Right side - Product Image */}
+            <motion.div className="hero-image-section">
+              <motion.img
+                src="https://img1.wsimg.com/isteam/ip/3495e2a8-0d69-44aa-9914-653f23472d2c/CYC3.jpg/:/rs=w:3070,m"
+                alt="CyclePath Gaming Elliptical"
+                className="hero-product-image"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              />
+            </motion.div>
           </motion.div>
         </div>
       </section>

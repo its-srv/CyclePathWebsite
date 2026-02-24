@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Heart, Activity, Users, Baby, Smartphone, Shield, Plug, Zap } from 'lucide-react';
 import './About.css';
 
@@ -6,61 +6,61 @@ const About = () => {
   const benefits = [
     {
       icon: <Activity size={28} />,
-      title: 'Boost circulation',
-      description: 'Easy sessions that get your blood moving and leave you energized.'
+      title: 'Blood Circulation',
+      description: 'Promotes blood circulation with light to medium exercise, enhancing the health benefits of exercise.'
     },
     {
       icon: <Baby size={28} />,
-      title: 'Kids actually move',
-      description: 'Games that turn screen time into play time with real activity.'
+      title: 'Active Youth',
+      description: 'Helps children and teens become more physically active by integrating fitness band technology into their routines.'
     },
     {
       icon: <Users size={28} />,
-      title: 'Family vibes',
-      description: 'Play together, cheer each other on, make moving a group thing.'
+      title: 'Family Health',
+      description: 'Creates a healthier environment and home life for families.'
     },
     {
       icon: <Heart size={28} />,
-      title: 'Parents who care (but chill)',
-      description: 'Quick ways to join the fun and track progress without the hassle.'
+      title: 'Parental Engagement',
+      description: 'Provides parents with better tools to engage in their kids\' health and fitness journey.'
     },
     {
       icon: <Smartphone size={28} />,
-      title: 'Build healthy habits',
-      description: 'Short, fun sessions that stick — no drama, just daily wins.'
+      title: 'Healthy Habits',
+      description: 'Conditions kids to perform exercise while playing on their smartphones, no matter where they are.'
     },
     {
       icon: <Shield size={28} />,
-      title: 'Better screen balance',
-      description: 'Games that nudge kids to move, not just stare — healthier playtime.'
+      title: 'Parental Monitoring',
+      description: 'Allows parents to monitor their children\'s game playing time on their smartphones, ensuring a balanced lifestyle.'
     },
     {
       icon: <Activity size={28} />,
-      title: 'Rehab-friendly',
-      description: 'Gentle and usable for recovery or anyone easing back into movement.'
+      title: 'Medical Accessibility',
+      description: 'User-friendly for anyone with medical needs, such as post-surgery physical therapy or diabetic patients.'
     }
   ];
 
   const howItWorks = [
     {
       icon: <Smartphone size={40} />,
-      title: 'Instant pair',
-      description: 'Connect your phone fast. No headaches, just go.'
+      title: 'Bluetooth Connection',
+      description: 'CyclePath utilizes Bluetooth exercise bike technology to connect your smartphone to the bike.'
     },
     {
       icon: <Activity size={40} />,
-      title: 'Live stats',
-      description: 'Your session updates in real time. Track progress, flex gains.'
+      title: 'Fitness Sync',
+      description: 'Your information and statistics are synced with the included fitness band technology.'
     },
     {
       icon: <Shield size={40} />,
-      title: 'Self-powered and chill',
-      description: 'Generates energy while you ride. Clean, quiet, home-friendly.'
+      title: 'Eco-Friendly Design',
+      description: 'The bike operates without outside power, emits no harmful gases or radiation, and is suitable for all ages.'
     },
     {
       icon: <Zap size={40} />,
-      title: 'Charge while you ride',
-      description: 'Plug in your phone and top up battery as you pedal. Simple.'
+      title: 'Energy Generation',
+      description: 'As you pedal, you generate energy, enabling you to charge your phone or any device through the USB port.'
     }
   ];
 
@@ -99,11 +99,10 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="about-hero-title">
-            <span className="gradient-text">CyclePath</span> — Pedal. Play. Level up.
-          </h1>
+          <h1 className="about-hero-title">About <span className="gradient-text">CyclePath</span></h1>
           <p className="about-hero-subtitle">
-            Turn workouts into games. Pedal to score, charge, and feel great. 🚴‍♂️🎮
+            Discover innovative home exercise technology that combines the health benefits
+            of exercise with fun gaming experiences.
           </p>
         </motion.div>
       </section>
@@ -132,9 +131,12 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="about-title">Why it’s different</h2>
+            <h2 className="about-title">Revolutionary Hybrid Technology</h2>
             <p className="about-description">
-              We fused a home bike with mobile games. You pedal, the game reacts. No boring workouts — just play that moves you.
+              This hybrid technology, featuring a Bluetooth exercise bike, offers both health
+              benefits and game-playing capabilities. It represents an exciting new category
+              in home gaming and home exercise, paving the way for children and adults to
+              discover how to combine both activities effectively.
             </p>
           </motion.div>
         </div>
@@ -149,9 +151,9 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Why you’ll love it</h2>
+          <h2 className="section-title">Benefits</h2>
           <p className="section-subtitle">
-            Fun workouts. Real results. Zero snooze.
+            Transform your lifestyle with CyclePath
           </p>
         </motion.div>
 
@@ -188,9 +190,9 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">How it works</h2>
+          <h2 className="section-title">How Does It Work?</h2>
           <p className="section-subtitle">
-            Pair. Pedal. Play. Simple setup, instant fun.
+            Simple technology, powerful results
           </p>
         </motion.div>
 
@@ -239,11 +241,15 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}                
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="mission-title">Our mission</h2>
+          <h2 className="mission-title">Our Mission</h2>
           <p className="mission-description">
-            Make fitness fun. Bring people together. Help you move more, not less. Build gear that nudges you to play and feel better.
+            At CyclePath, we believe in making fitness fun and accessible for everyone.
+            Our mission is to revolutionize the way people think about exercise by
+            combining it with the engaging world of gaming. We're committed to creating
+            products that promote health, bring families together, and make staying
+            active an enjoyable part of your daily routine.
           </p>
         </motion.div>
       </section>

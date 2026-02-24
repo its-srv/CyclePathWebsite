@@ -38,7 +38,13 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="footer-logo">CyclePath</h3>
+            <Link to="/" className="footer-logo-link">
+              <img
+                src="https://img1.wsimg.com/isteam/ip/3495e2a8-0d69-44aa-9914-653f23472d2c/CyclePath%20Logo%20White%20Border.png/:/rs=w:428,h:400,cg:true,m/cr=w:428,h:400/qt=q:95"
+                alt="CyclePath Logo"
+                className="footer-logo-image"
+              />
+            </Link>
             <p className="footer-tagline">
               Revolutionizing home fitness through gaming technology
             </p>

@@ -43,10 +43,14 @@ const Header = () => {
         <Link to="/" className="logo">
           <motion.div
             className="logo-icon"
-            whileHover={{ rotate: 360 }}
+            whileHover={{ rotate: 360, scale: 1.1 }}
             transition={{ duration: 0.5 }}
           >
-            <Gamepad2 size={32} />
+            <img
+              src="https://img1.wsimg.com/isteam/ip/3495e2a8-0d69-44aa-9914-653f23472d2c/CyclePath%20Logo%20White%20Border.png/:/rs=w:428,h:400,cg:true,m/cr=w:428,h:400/qt=q:95"
+              alt="CyclePath Logo"
+              className="logo-image"
+            />
           </motion.div>
           <span className="logo-text">CyclePath</span>
         </Link>
