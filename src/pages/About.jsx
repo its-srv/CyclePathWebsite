@@ -303,12 +303,12 @@ const About = () => {
     {
       icon: <Smartphone size={40} />,
       title: 'Quick Connect',
-      description: 'Start riding and playing in seconds.'
+      description: 'Start riding and playing instantly.'
     },
     {
       icon: <Activity size={40} />,
       title: 'Live Progress',
-      description: 'See your movement turn into in-game action.'
+      description: 'See your movement turn into real in-game action.'
     },
     {
       icon: <Shield size={40} />,
